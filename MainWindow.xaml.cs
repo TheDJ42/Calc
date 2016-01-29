@@ -65,6 +65,13 @@ namespace Calculator
 
             // Display Answer
             Answer.Text = Convert.ToString(difference);
+
+            // Update Total
+            total = total + difference;
+
+            // Display Total in textbox
+            Text_Total.Text = Convert.ToString(total);
+
         }
 
         private void Multiply_Click(object sender, RoutedEventArgs e)
@@ -79,6 +86,13 @@ namespace Calculator
 
             // Display Answer
             Answer.Text = Convert.ToString(Product);
+
+            // Update Total
+            total = total + Product;
+
+            // Display Total in textbox
+            Text_Total.Text = Convert.ToString(total);
+
         }
 
         private void Divide_Click(object sender, RoutedEventArgs e)
@@ -93,6 +107,13 @@ namespace Calculator
 
             // Display Answer
             Answer.Text = Convert.ToString(quotient);
+
+            // Update Total
+            total = total + quotient;
+
+            // Display Total in textbox
+            Text_Total.Text = Convert.ToString(total);
+
         }
 
         private void Average_Click(object sender, RoutedEventArgs e)
@@ -107,6 +128,13 @@ namespace Calculator
 
             // Display Answer
             Answer.Text = Convert.ToString(Average);
+
+            // Update Total
+            total = total + Average;
+
+            // Display Total in textbox
+            Text_Total.Text = Convert.ToString(total);
+
         }
     }
 }

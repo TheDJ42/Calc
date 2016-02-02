@@ -136,5 +136,19 @@ namespace Calculator
             Text_Total.Text = Convert.ToString(total);
 
         }
+
+        private void Cent_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Reset_Button_Click(object sender, RoutedEventArgs e)
+        {
+            // Reset 'Total' to Zero
+            total = Convert.ToInt32(0);
+
+            // Display the new total
+            Text_Total.Text = Convert.ToString(total); 
+        }
     }
 }

@@ -21,7 +21,8 @@ namespace Calculator
     public partial class MainWindow : Window
     { // Create a Varible Called Total and set it to Zero 
         int total = 0;
-        
+
+       
         public MainWindow()
         {
             InitializeComponent();
@@ -139,7 +140,10 @@ namespace Calculator
 
         private void Cent_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            // Read the Values from answer
+            Answer = Convert.ToInt32(Answer.Text);
+            // Convert Answer to Celsius    
+                Text_Celsius = (Answer-32)*5/9;
         }
 
         private void Reset_Button_Click(object sender, RoutedEventArgs e)
